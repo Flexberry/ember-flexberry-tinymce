@@ -5,14 +5,14 @@ export default Controller.extend({
   /**
     Component options.
 
-    @method сomponentOptions
+    @property сomponentOptions
   */
   сomponentOptions: undefined,
 
   /**
     Component value.
 
-    @method value
+    @property value
   */
   value: undefined,
 

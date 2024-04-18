@@ -12,12 +12,12 @@ export default Component.extend({
 
   /**
    * Настройки компонента tinymce по умолчанию
-  */
+   */
   defaultOptions: null,
 
   /**
    * Пользовательские настройки компонента tinymce
-  */
+   */
   options: null,
 
   init() {

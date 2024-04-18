@@ -26,10 +26,17 @@ Contributing
 * `cd ember-flexberry-tinymce`
 * `npm install`
 
-### Linting
+#### Linting
 
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+* `yarn lint:js`
+* `yarn lint:js --fix`
+
+#### Linting
+
+* `npm run lint` - run all linters
+* `npm run lint:js` - run linter for code
+* `npm run lint:hbs` - run linter for templates
+* `npx update-todo-errors` - update list of todo errors
 
 ### Running tests
 
