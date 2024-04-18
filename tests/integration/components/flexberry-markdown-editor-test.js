@@ -15,9 +15,7 @@ module('Integration | Component | flexberry-markdown-editor', function(hooks) {
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
-    await render(hbs`
-      {{flexberry-markdown-editor value="template block text"}}
-    `);
+    await render(hbs`{{flexberry-markdown-editor value="template block text"}}`);
 
     assert.equal(this.element.textContent.trim(), 'template block text');
   });
