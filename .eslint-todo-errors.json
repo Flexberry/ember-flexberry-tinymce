@@ -1,0 +1,6 @@
+{
+  "tests/integration/components/flexberry-markdown-editor-test.js": [
+    { "ruleId": "hbs/check-hbs-template-literals", "line": 13, "column": 18 },
+    { "ruleId": "hbs/check-hbs-template-literals", "line": 18, "column": 18 }
+  ]
+}
