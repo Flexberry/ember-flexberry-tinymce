@@ -10,6 +10,33 @@ ember-flexberry-tinymce
 ember install ember-flexberry-tinymce
 ```
 
+Также нужно установить "broccoli-funnel": "^3.0.8" и "tinymce": "^6".
+
+В ember-cli-build.js добавить:
+
+```js
+const Funnel = require('broccoli-funnel');
+
+module.exports = function(defaults) {
+  let app = new EmberAddon(defaults, {
+    // Добавьте эти опции для включения TinyMCE
+    autoImport: {
+      webpack: {
+        externals: { tinymce: 'tinymce' },
+      },
+    },
+  });
+
+  app.import('node_modules/tinymce/tinymce.min.js');
+
+  const tinymceTree = new Funnel('node_modules/tinymce/', {
+    include: ['icons/**/*', 'models/**/*', 'skins/**/*', 'themes/**/*', 'plugins/**/*', 'langs/**/*'],
+    destDir: '/assets'
+  });
+
+  return app.toTree(tinymceTree);
+};
+```
 
 Использование
 ------------------------------------------------------------------------------
