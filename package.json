@@ -1,6 +1,6 @@
 {
   "name": "ember-flexberry-tinymce",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0",
   "description": "Ember Flexberry Tinymce Addon",
   "keywords": [
     "ember-addon",
